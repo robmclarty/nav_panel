@@ -35,23 +35,23 @@ class ActionViewExtensionsTest < ActiveSupport::TestCase
   # Keep getting `undefined method `append' for nil:NilClass`.
   # This issue affects all the rest of these tests...
 
-  # test "admin_panel creates div with class admin-panel" do
+  # test "admin_nav creates div with class admin-panel" do
   #   content_for :admin_nav_global, "something"
   #   content_for :admin_nav_local, "something"
   #   content_for :admin_nav_message, "something"
   #
-  #   assert_match /class="admin-nav"/, admin_panel
+  #   assert_match /class="admin-nav"/, admin_nav
   # end
 
-  # test "admin_panel contains <ul> with class admin-nav-global" do
+  # test "admin_nav contains <ul> with class admin-nav-global" do
   #   flunk 'Not done testing yet.'
   # end
 
-  # test "admin_panel contains <ul> with class admin-nav-local" do
+  # test "admin_nav contains <ul> with class admin-nav-local" do
   #   flunk 'Not done testing yet.'
   # end
 
-  # test "admin_panel contains <div> with class admin-nav-message" do
+  # test "admin_nav contains <div> with class admin-nav-message" do
   #   flunk 'Not done testing yet.'
   # end
 
