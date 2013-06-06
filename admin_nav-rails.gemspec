@@ -13,13 +13,14 @@ Gem::Specification.new do |s|
   s.summary     = %q{A simple admin navigation bar for your Rails app.}
   s.description = %q{Applies a navigation bar at the top of your website in which you can insert any administration actions you need as buttons.}
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,vendor,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency 'rails', '>= 3.2.13'
+  #s.add_dependency 'railties', '~> 3.0' # TODO: Possibly use this instead of full Rails dependency?
 
   s.add_development_dependency 'sqlite3', '~> 1.3.7'
-  s.add_development_dependency 'capybara', '~> 2.1.0'
+  #s.add_development_dependency 'capybara', '~> 2.1.0'
   #s.add_development_dependency 'mocha', '~> 0.14.0'
   s.add_development_dependency 'turn', '~> 0.9.6'
 end
