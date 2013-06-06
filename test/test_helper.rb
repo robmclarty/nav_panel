@@ -24,7 +24,6 @@ if ActiveSupport::TestCase.method_defined?(:fixture_path=)
 end
 
 class ActiveSupport::TestCase
-  include AdminNav::Rails::ActionViewExtensions
 end
 
 # TODO: Can integration tests be run on view helpers at all?

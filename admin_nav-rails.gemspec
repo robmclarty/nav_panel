@@ -21,5 +21,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'sqlite3', '~> 1.3.7'
   s.add_development_dependency 'capybara', '~> 2.1.0'
   #s.add_development_dependency 'mocha', '~> 0.14.0'
-  #s.add_development_dependency 'turn', '~> 0.9.6'
+  s.add_development_dependency 'turn', '~> 0.9.6'
 end
