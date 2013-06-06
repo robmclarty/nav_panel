@@ -5,7 +5,7 @@ require 'admin_nav/rails/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "Admin Nav"
+  s.name        = "admin_nav-rails"
   s.version     = AdminNav::Rails::VERSION
   s.authors     = ["Rob McLarty"]
   s.email       = ["rob.mclarty@gmail.com"]
