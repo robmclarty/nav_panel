@@ -1,9 +1,9 @@
 module AdminNav
   module Rails
     module ActionViewExtensions
-      
+
       # Render the admin-nav container markup scaffolding.
-      def admin_panel
+      def admin_nav
         content_tag :div, :class => 'admin-nav' do
           concat content_tag :ul,  content_for(:admin_nav_global),   :class => 'admin-nav-global.button-list'
           concat content_tag :ul,  content_for(:admin_nav_local),    :class => 'admin-nav-local.button-list'
@@ -28,7 +28,9 @@ module AdminNav
       # Should set a new admin-nav message that overrides any 
       # previously stored message using :flush => true.
       def set_admin_message(message)
-        content_for :admin_nav_message, message, :flush => true
+        content_for :admin_nav_message, :flush => true do
+          message
+        end
       end
 
 
