@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    admin_nav (0.0.7)
+    admin_nav (0.0.9)
       rails (>= 3.1)
 
 GEM

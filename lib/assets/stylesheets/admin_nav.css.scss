@@ -63,7 +63,7 @@ body.admin-nav-offset {
   height: $panel-height;
   border: 0;
   background-color: transparent;
-  background-image: asset-url('admin-nav-icons.png');
+  background-image: image-url("admin_nav-icons.png");
   background-position: 0 0;
   background-size: $panel-height 484px;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body.admin-nav-offset {
 
   // Load @2x version of icon sprite-sheet.
   .admin-button {
-    background-image: asset-url('admin-nav-icons@2x.png');
+    background-image: image-url("admin_nav-icons@2x.png");
   }
 
 }
