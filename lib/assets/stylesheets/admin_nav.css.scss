@@ -80,18 +80,17 @@ body.admin-nav-offset {
     text-decoration: none;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
   }
-
-  .unknown  { background-position: 0 0; }
-  .edit     { background-position: 0 -44px; }
-  .remove   { background-position: 0 -88px; }
-  .new      { background-position: 0 -132px; }
-  .delete   { background-position: 0 -176px; }
-  .logout   { background-position: 0 -220px; }
-  .cancel   { background-position: 0 -264px; }
-  .settings { background-position: 0 -308px; }
-  .more     { background-position: 0 -352px; }
-  .save     { background-position: 0 -396px; }
-  .user     { background-position: 0 -440px; }
+  &.unknown  { background-position: 0 0; }
+  &.edit     { background-position: 0 -44px; }
+  &.remove   { background-position: 0 -88px; }
+  &.new      { background-position: 0 -132px; }
+  &.delete   { background-position: 0 -176px; }
+  &.logout   { background-position: 0 -220px; }
+  &.cancel   { background-position: 0 -264px; }
+  &.settings { background-position: 0 -308px; }
+  &.more     { background-position: 0 -352px; }
+  &.save     { background-position: 0 -396px; }
+  &.user     { background-position: 0 -440px; }
 }
 
 .admin-nav-message {
