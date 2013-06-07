@@ -4,8 +4,8 @@ module AdminNav
     # Render the admin-nav container markup scaffolding.
     def admin_nav
       content_tag :div, :class => 'admin-nav' do
-        concat content_tag :ul,  content_for(:admin_nav_global),   :class => 'admin-nav-global.button-list'
-        concat content_tag :ul,  content_for(:admin_nav_local),    :class => 'admin-nav-local.button-list'
+        concat content_tag :ul,  content_for(:admin_nav_global),   :class => 'admin-nav-global button-list'
+        concat content_tag :ul,  content_for(:admin_nav_local),    :class => 'admin-nav-local button-list'
         concat content_tag :div, content_for(:admin_nav_message),  :class => 'admin-nav-message'
       end
     end
