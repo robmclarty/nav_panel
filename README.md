@@ -1,6 +1,6 @@
 # Admin Nav
 
-## A simple admin navigation bar for your Rails app.
+### A simple admin navigation bar for your Rails app.
 
 This gem enables you to apply a simple navigation bar at the top of your 
 website in which you can insert any link actions you need, styled as buttons.
@@ -63,14 +63,24 @@ the nav panel contains `content_for` blocks where any links added using the othe
 will be gathered and rendered in place. In order for these links to show up in your nav
 panel, you will need to make sure your `local_admin_link_to` and `global_admin_link_to`
 commands are done *above* the `admin_nav` command (they need to come first, and be stored
-in `content_for`). This way, you can add links anywhere in your viewed and they will be
+in `content_for`). This way, you can add links anywhere in your views and they will be
 rendered in the main `yield` before the nav panel and everything should be peachy.
+
+Don't worry about positioning. The admin nav panel uses `position: fixed` so that it will
+appear at the top of the page, on top of any existing UI elements.
+
+NOTE: A convenience CSS class is included called `admin-nav-offset` that you can use to add
+padding to the top of any element you need that is exactly the same height as the admin
+nav panel. Usually I apply this to the `<body>` tag to push all the content down, conditionally
+when I am using the `admin_nav` function in my views (e.g., only when a user is logged in). I've
+kept this separate and up to you to implement so you're free to include it as you see fit.
 
 ### global_admin_link_to
 
-Add any global links/buttons you want to add anywhere you like, above the `admin_nav` call
-you just made. This would usually be done in your layout file (since these are site-wide buttons)
-but it's up to you. The helper acts just a single-line `link_to` command (in fact it uses
+Add any global links/buttons you want anywhere you like, above the `admin_nav` call
+you just made. These links will be rendered on the right side of the nav panel. 
+This would usually be done in your layout file (since these are site-wide buttons)
+but it's up to you. The helper acts like a single-line `link_to` command (in fact it uses
 `link_to` inside).
 
     <%= global_admin_link_to 'Logout', logout_path, :class => 'logout' %>
