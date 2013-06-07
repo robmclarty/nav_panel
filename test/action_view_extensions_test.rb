@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class ActionViewExtensionsTest < ActiveSupport::TestCase
-  include AdminNav::Rails::ActionViewExtensions
+  include AdminNav::ActionViewExtensions
   include ActionView::Helpers::UrlHelper
   include ActionView::Helpers::TagHelper
   include ActionView::Helpers::CaptureHelper
