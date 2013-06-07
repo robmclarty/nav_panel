@@ -76,6 +76,10 @@ body.admin-nav-offset {
   font-size: 16px;
   line-height: $panel-height;
 
+  &:link,
+  &:visited {
+    color: $type-color;
+  }
   &:hover,
   &:active,
   &:focus {
