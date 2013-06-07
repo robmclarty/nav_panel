@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class ActionViewExtensionsTest < ActiveSupport::TestCase
-  include AdminNav::ActionViewExtensions
+  include NavPanel::ActionViewExtensions
   include ActionView::Helpers::UrlHelper
   include ActionView::Helpers::TagHelper
   include ActionView::Helpers::CaptureHelper
@@ -12,21 +12,21 @@ class ActionViewExtensionsTest < ActiveSupport::TestCase
     @sample_link_url = 'http://somewhere.com'
   end
 
-  test "insert_admin_button_class_to adds admin-button class if no existing classes" do
-    result = insert_admin_button_class_to({})
+  test "insert_nav_panel_button_class_to adds nav-panel-button class if no existing classes" do
+    result = insert_nav_panel_button_class_to({})
     
-    assert_equal({ :class => "admin-button" }, result)
+    assert_equal({ :class => "nav-panel-button" }, result)
   end
 
-  test "insert_admin_button_class_to concats admin-button class if already existing classes" do
-    result = insert_admin_button_class_to({ :class => 'existing-class' })
+  test "insert_nav_panel_button_class_to concats nav-panel-button class if already existing classes" do
+    result = insert_nav_panel_button_class_to({ :class => 'existing-class' })
     
-    assert_equal({ :class => "existing-class admin-button" }, result)
+    assert_equal({ :class => "existing-class nav-panel-button" }, result)
   end
 
-  test "admin_link_to returns link wrapped in <li> tag" do
-    expected_link = content_tag :li, link_to(@sample_link_label, @sample_link_url, :class => 'admin-button')
-    result = admin_link_to(@sample_link_label, @sample_link_url)
+  test "nav_panel_link_to returns link wrapped in <li> tag" do
+    expected_link = content_tag :li, link_to(@sample_link_label, @sample_link_url, :class => 'nav-panel-button')
+    result = nav_panel_link_to(@sample_link_label, @sample_link_url)
 
     assert_match expected_link, result
   end

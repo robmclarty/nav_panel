@@ -14,11 +14,11 @@ $max-mobile-width: 800px;
 
 // Styles
 // ------
-body.admin-nav-offset {
+body.nav-panel-offset {
   padding-top: $panel-height;
 }
 
-.admin-nav {
+.nav-panel {
   position: fixed;
   top: 0;
   right: 0;
@@ -46,10 +46,10 @@ body.admin-nav-offset {
     margin: 0;
     padding: 0;
 
-    &.admin-nav-global {
+    &.nav-panel-global {
       float: right;
     }
-    &.admin-nav-local {
+    &.nav-panel-local {
       float: left;
     }
 
@@ -61,13 +61,13 @@ body.admin-nav-offset {
   }
 }
 
-.admin-button {
+.nav-panel-button {
   display: inline-block;
   padding: 0 13px 0 40px;
   height: $panel-height;
   border: 0;
   background-color: transparent;
-  background-image: image-url("admin_nav-icons.png");
+  background-image: image-url("nav_panel-icons.png");
   background-position: 0 0;
   background-size: $panel-height 484px;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ body.admin-nav-offset {
   &.user     { background-position: 0 -440px; }
 }
 
-.admin-nav-message {
+.nav-panel-message {
   position: absolute;
   top: 0;
   right: 0;
@@ -120,7 +120,7 @@ body.admin-nav-offset {
 @media screen and (max-width: $max-mobile-width) {
 
   // Make buttons square and hide text, showing only the background icon.
-  .admin-button {
+  .nav-panel-button {
     width: $panel-height;
     padding: 0;
     text-indent: -9999px;
@@ -139,8 +139,8 @@ body.admin-nav-offset {
        (min-resolution: 1.3dppx) {
 
   // Load @2x version of icon sprite-sheet.
-  .admin-button {
-    background-image: image-url("admin_nav-icons@2x.png");
+  .nav-panel-button {
+    background-image: image-url("nav_panel-icons@2x.png");
   }
 
 }

@@ -101,8 +101,28 @@ You can also pass in other html options you want to add like ids.
 
 ### set_admin_message
 
-(in progress)
+(to be completed)
 
+### Example
+
+If you want to use this nav panel only for administration purposes (e.g., it should appear
+only when a user has logged into your app) you might implement it like this in your main
+layout file.
+
+```
+<%= yield %>
+
+<% if current_user? %>
+  <%= global_admin_link_to 'Users', users_path, :class => 'user' %>
+  <%= global_admin_link_to 'Settings', settings_path, :class => 'settings' %>
+  <%= global_admin_link_to 'Logout', logout_path, :class => 'logout' %>
+  <%= admin_nav %>
+<% end %>
+```
+
+This sets up some global links before the main `admin_nav` call only if there is a current
+user logged in. Note that the order of the `global_admin_link_to` calls is the order the
+buttons will appear in from left to right.
 
 ## Icons
 

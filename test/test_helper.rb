@@ -11,7 +11,7 @@ require 'action_view/template'
 # TODO: Can I test with this?
 #require 'capybara/rails'
 
-require 'admin_nav'
+require 'nav_panel'
 
 Rails.backtrace_cleaner.remove_silencers!
 
@@ -25,13 +25,3 @@ end
 
 class ActiveSupport::TestCase
 end
-
-# TODO: Can integration tests be run on view helpers at all?
-# class ActionDispatch::IntegrationTest
-#   include Capybara::DSL
-
-#   def teardown
-#     Capybara.reset_sessions!
-#     Capybara.use_default_driver
-#   end
-# end
