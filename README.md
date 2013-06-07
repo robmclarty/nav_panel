@@ -23,6 +23,10 @@ And then execute:
 
     $ bundle install
 
+Then, make sure to add the stylesheet to your manifest file.
+
+    require nav_panel
+
 
 ## Usage
 
