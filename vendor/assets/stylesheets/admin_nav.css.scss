@@ -88,7 +88,7 @@ body.admin-nav-offset {
     text-decoration: none;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
   }
-  &.unknown  { background-position: 0 0; }
+  &.star     { background-position: 0 0; }
   &.edit     { background-position: 0 -44px; }
   &.remove   { background-position: 0 -88px; }
   &.new      { background-position: 0 -132px; }

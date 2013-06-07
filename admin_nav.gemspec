@@ -13,13 +13,13 @@ Gem::Specification.new do |s|
   s.summary     = %q{A simple admin navigation bar for your Rails app.}
   s.description = %q{Applies a navigation bar at the top of your website in which you can insert any administration actions you need as buttons.}
 
-  # s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
-  # s.test_files = Dir["test/**/*"]
+  s.files = Dir["{vendor,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.test_files = Dir["test/**/*"]
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  # s.files         = `git ls-files`.split("\n")
+  # s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  # s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  # s.require_paths = ["lib"]
 
   # s.files         = `git ls-files`.split($/)
   # s.executables   = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
