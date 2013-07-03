@@ -67,7 +67,7 @@ body.nav-panel-offset {
   height: $panel-height;
   border: 0;
   background-color: transparent;
-  background-image: image-url("nav_panel-icons.png");
+  background-image: image-url("nav_panel/icons.png");
   background-position: 0 0;
   background-size: $panel-height 484px;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ body.nav-panel-offset {
 
   // Load @2x version of icon sprite-sheet.
   .nav-panel-button {
-    background-image: image-url("nav_panel-icons@2x.png");
+    background-image: image-url("nav_panel/icons@2x.png");
   }
 
 }
